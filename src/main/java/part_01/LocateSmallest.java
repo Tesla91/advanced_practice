@@ -1,5 +1,8 @@
 package part_01;
 
+import java.util.Random;
+
+
 /**
  * Created by ryandesmond on 7/10/17.
  */
@@ -24,4 +27,20 @@ package part_01;
 
 
 public class LocateSmallest {
+    public static void main(String[] args) {
+
+        Random rand = new Random();
+        int n = rand.nextInt(50) + 1;
+        int sum;
+
+
+        int array[] = new int[n];
+
+        for(n = 0; n < array.length -1; n++)
+            array[n] = n;
+
+        for(n = 0; n < array.length -1; n++)
+            System.out.println(n);
+
+    }
 }
