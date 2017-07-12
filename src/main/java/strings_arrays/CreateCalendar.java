@@ -16,7 +16,6 @@ public class CreateCalendar {
 
     public static void main(String[] args) {
 
-
         // Create a Calendar object and set it's date to July 1, 2017.
 
         Calendar calendar = new GregorianCalendar(2017, 6, 1, 15, 00);
@@ -55,5 +54,6 @@ public class CreateCalendar {
 
         // sout(date)
         System.out.println("Date after format 3 change: " + dateFormat.format(calendar.getTime()) );
+
     }
 }
