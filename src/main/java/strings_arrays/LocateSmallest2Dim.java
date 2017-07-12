@@ -1,4 +1,4 @@
-package string_arrays;
+package strings_arrays;
 
 /**
  * Created by ryandesmond on 7/10/17.

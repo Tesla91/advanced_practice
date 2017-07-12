@@ -1,4 +1,4 @@
-package part_01;
+package strings_arrays;
 /*
     Write the code to reverse the order of a standard array in place. Do not create a second array.
  */

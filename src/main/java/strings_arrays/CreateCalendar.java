@@ -1,11 +1,9 @@
-package part_01;
+package strings_arrays;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.Month;
-import java.time.ZoneId;
-import java.util.Date;
-import java.util.*;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 /**
  * Created by ryandesmond on 7/10/17.
  */
@@ -21,7 +19,7 @@ public class CreateCalendar {
 
         // Create a Calendar object and set it's date to July 1, 2017.
 
-        Calendar calendar = new GregorianCalendar (2017, 6, 1, 15, 00);
+        Calendar calendar = new GregorianCalendar(2017, 6, 1, 15, 00);
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMMM dd, yyyy");
         dateFormat.setTimeZone(calendar.getTimeZone());
