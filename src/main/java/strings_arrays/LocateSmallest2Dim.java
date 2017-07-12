@@ -1,5 +1,7 @@
 package strings_arrays;
 
+import java.util.Random;
+
 /**
  * Created by ryandesmond on 7/10/17.
  */
@@ -26,4 +28,40 @@ package strings_arrays;
 */
 
 public class LocateSmallest2Dim {
+    public static void main(String[] args) {
+
+        Random rand = new Random();
+        int array[][];
+        int  n = rand.nextInt(30) + 1;
+        int  m = rand.nextInt(30) + 1;
+        array = new int[n][m];
+        int min = 22_222;
+        int min2 = 22_222;
+
+        System.out.println("Original array: ");
+        for(int x = 0; x < array.length; x++) {
+            for(int y = 0; y < array[x].length; y++) {
+                array[x][y] = rand.nextInt(22_222) + 1;
+                System.out.print(array[x][y] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        for(int i = 0; i < array.length; i++) {
+            for(int j = 0; j < array[i].length; j++) {
+                if (array[i][j] < min) {
+                    min = array[i][j];
+                } else if (array[i][j] < min2) {
+                    min2 = array[i][j];
+                }
+            }
+        }
+        System.out.println("min number is " + min);
+        System.out.println("min2 number is " + min2);
+
+        int sum = min + min2;
+        System.out.println("Sum is " + sum);
+
+    }
 }

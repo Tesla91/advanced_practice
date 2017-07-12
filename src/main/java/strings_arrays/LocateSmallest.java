@@ -29,17 +29,31 @@ public class LocateSmallest {
     public static void main(String[] args) {
 
         Random rand = new Random();
-        int n = rand.nextInt(50) + 1;
-        int sum;
+        int array[] = new int[100];
+        int min = 22222;
+        int min2 = 22222;
+        int i, n;
 
 
-        int array[] = new int[n];
+        for(n = 0; n < 100; n++) {
+            array[n] = rand.nextInt(22222) + 1;
+        }
+        for (int x : array) {
+            System.out.println(x);
 
-        for(n = 0; n < array.length -1; n++)
-            array[n] = n;
+        }
 
-        for(n = 0; n < array.length -1; n++)
-            System.out.println(n);
+        for(i = 0; i < array.length-1; i++) {
+            if (array[i] < min) min = array[i];
+        }
+        System.out.println("min number is " + min);
+
+        for(i = 0; i < array.length-1; i++) {
+            if (array[i] > min && array[i] < min2 ) min2 = array[i];
+        }
+        int sum = min + min2;
+        System.out.println("min2 number is " + min2);
+        System.out.println("Sum is " + sum);
 
     }
 }
