@@ -31,29 +31,35 @@ public class LocateSmallest {
 
         Random rand = new Random();
         int array[] = new int[100];
-        int min = 22222;
-        int min2 = 22222;
+        int min = 22_222;
+        int min2 = 22_222;
         int i, n;
 
-
+        //populating the array with random number between 1 and 22,222
         for(n = 0; n < 100; n++) {
-            array[n] = rand.nextInt(22222) + 1;
+            array[n] = rand.nextInt(22_222) + 1;
         }
+        //printing out what is in my original array
         for (int x : array) {
             System.out.println(x);
 
         }
-
+        //finding the smallest number in the array
         for(i = 0; i < array.length-1; i++) {
             if (array[i] < min) min = array[i];
         }
+        //printing out the smallest number
         System.out.println("min number is " + min);
-
+        //finding the next smallest number
         for(i = 0; i < array.length-1; i++) {
-            if (array[i] > min && array[i] < min2 ) min2 = array[i];
+            if (array[i] >= min && array[i] < min2 ) min2 = array[i];
         }
-        int sum = min + min2;
+        //printing the second smallest number
         System.out.println("min2 number is " + min2);
+
+        //adding the two smallest numbers
+        int sum = min + min2;
+        //printing out the sum of the two smallest numbers
         System.out.println("Sum is " + sum);
 
     }

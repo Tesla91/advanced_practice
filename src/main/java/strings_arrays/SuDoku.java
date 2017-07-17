@@ -23,6 +23,9 @@ for example, 483 is the 3-digit number found in the top left corner of the solut
 
 */
 
+// Extended ASCII characters 179-218
+//enable unicode hex input keyboard hold down option alt key and type unicode
+
 public class SuDoku {
 
 }
