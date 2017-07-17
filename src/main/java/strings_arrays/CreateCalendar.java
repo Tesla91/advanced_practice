@@ -55,5 +55,6 @@ public class CreateCalendar {
 
         // sout(date)
         System.out.println("Date after format 3 change: " + dateFormat.format(calendar.getTime()) );
+
     }
 }

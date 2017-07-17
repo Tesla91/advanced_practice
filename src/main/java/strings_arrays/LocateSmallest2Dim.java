@@ -1,5 +1,7 @@
 package strings_arrays;
 
+import java.util.Random;
+
 /**
  * Created by ryandesmond on 7/10/17.
  */
@@ -26,4 +28,5 @@ package strings_arrays;
 */
 
 public class LocateSmallest2Dim {
+    
 }
