@@ -63,4 +63,5 @@ public class LocateSmallest {
         System.out.println("Sum is " + sum);
 
     }
+
 }
