@@ -11,23 +11,15 @@ package IO_threads;
 *in each thread, print out the name of the thread
 */
 public class Threads implements Runnable{
-    int sleep;
     Thread myThread;
-
+    int sleep;
 
     Threads(String name, int sleep){
         myThread = new Thread (this, name);
-        this.sleep = sleep;
         myThread.start();
     }
 
-
     public void run(){
-        try {
-            Thread.sleep(sleep);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         System.out.println(myThread.getName());
     }
 
