@@ -23,9 +23,9 @@ public class ReverseArray {
             arr[arr.length - i - 1] = temp;
         }
 
-        for (int i = 0; i < 100; i++) {
-            System.out.println(arr[i]);
-        }
+//        for (int i = 0; i < 100; i++) {
+//            System.out.println(arr[i]);
+//        }
     }
 
 }
